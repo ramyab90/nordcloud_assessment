@@ -31,7 +31,7 @@ Azure application gateway is a web traffic load balancer that enables to manage 
 
 As most of the users are active during business hours and the traffic will be 4 times high that typical during big events, application gateway will be able to autoscale based on the changing traffic load patterns.
 
-Note: Autoscaling feature of application gateway is only supported with Standard_v2 or WAF_v2 SKU.
+*Note: Autoscaling feature of application gateway is only supported with Standard_v2 or WAF_v2 SKU.
 
 o	Backend pool:
 A new backend pool has been created for App Services with two WebApps.
