@@ -23,6 +23,8 @@
 ## Solution Design
 After considering the customer requirements, I have designed the below solution intent on Azure Cloud. The reasoning of solution is described as follows.
 
+![Screenshot](/images/nordcloud-solution-design.png)
+
 ## Application Gateway:
 
 Azure application gateway is a web traffic load balancer that enables to manage traffic on the web applications. In our solution, Application gateway has a frond end IP which is exposed a public endpoint so that users requests can be accessed over internet (HTTPS).
