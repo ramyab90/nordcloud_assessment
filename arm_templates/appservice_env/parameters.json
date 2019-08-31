@@ -1,0 +1,45 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "West Europe"
+        },
+        "aseName": {
+            "value": "notejam-ase"
+        },
+        "subscriptionId": {
+            "value": "57d26770-9356-4b44-8a7f-8c64d04a3c32"
+        },
+        "vnetName": {
+            "value": "notejam-vnet"
+        },
+        "subnetName": {
+            "value": "notejam-subnet"
+        },
+        "vnetId": {
+            "value": "/subscriptions/57d26770-9356-4b44-8a7f-8c64d04a3c32/resourceGroups/notejam/providers/Microsoft.Network/virtualNetworks/notejam-vnet"
+        },
+        "VNetResourceGroupName": {
+            "value": "notejam"
+        },
+        "vnetAddress": {
+            "value": "192.168.250.0/24"
+        },
+        "subnetAddress": {
+            "value": "192.168.250.0/24"
+        },
+        "subnetRouteTableName": {
+            "value": "notejam-ase-Route-Table"
+        },
+        "subnetNSGName": {
+            "value": "notejam-ase-NSG"
+        },
+        "ilbMode": {
+            "value": 0
+        },
+        "subnetId": {
+            "value": "/subscriptions/57d26770-9356-4b44-8a7f-8c64d04a3c32/resourceGroups/notejam/providers/Microsoft.Network/virtualNetworks/notejam-vnet/subnets/notejam-subnet"
+        }
+    }
+}

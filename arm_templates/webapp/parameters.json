@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "57d26770-9356-4b44-8a7f-8c64d04a3c32"
+        },
+        "name": {
+            "value": "notejam02"
+        },
+        "location": {
+            "value": "West Europe"
+        },
+        "hostingEnvironment": {
+            "value": ""
+        },
+        "hostingPlanName": {
+            "value": "notejam-ase"
+        },
+        "serverFarmResourceGroup": {
+            "value": "notejam"
+        },
+        "alwaysOn": {
+            "value": true
+        },
+        "currentStack": {
+            "value": "python"
+        },
+        "pythonVersion": {
+            "value": "2.7"
+        },
+		"tags": {
+            "value": "webapp 02"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "allowAzureIps": {
+            "value": false
+        },
+        "administratorLogin": {
+            "value": "notejam02"
+        },
+        "administratorLoginPassword": {
+            "value": "Admin@123"
+        },
+        "enableADS": {
+            "value": false
+        },
+        "location": {
+            "value": "westeurope"
+        },
+        "serverName": {
+            "value": "notejam02"
+        },
+        "enableVA": {
+            "value": false
+        },
+        "serverTags": {
+            "value": {
+                "notejam": "SQL database server 02"
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "aseName": {
+            "type": "string"
+        },
+        "subscriptionId": {
+            "type": "string"
+        },
+        "location": {
+            "type": "string"
+        },
+        "vnetName": {
+            "type": "string"
+        },
+        "subnetName": {
+            "type": "string"
+        },
+        "vnetId": {
+            "type": "string"
+        },
+        "VNetResourceGroupName": {
+            "type": "string"
+        },
+        "vnetAddress": {
+            "type": "string"
+        },
+        "subnetAddress": {
+            "type": "string"
+        },
+        "subnetRouteTableName": {
+            "type": "string"
+        },
+        "subnetNSGName": {
+            "type": "string"
+        },
+        "ilbMode": {
+            "type": "int"
+        },
+        "subnetId": {
+            "type": "string"
+        }
+    },
+    "resources": [
+        {
+            "apiVersion": "2019-02-01",
+            "type": "Microsoft.Web/hostingEnvironments",
+            "name": "[parameters('aseName')]",
+            "kind": "ASEV2",
+            "location": "[parameters('location')]",
+            "properties": {
+                "name": "[parameters('aseName')]",
+                "location": "[parameters('location')]",
+                "InternalLoadBalancingMode": "[parameters('ilbMode')]",
+                "virtualNetwork": {
+                    "Id": "[parameters('subnetId')]"
+                }
+            },
+            "tags": {
+                "notejam": "App Service Environment"
+            }
+        }
+    ]
+}
