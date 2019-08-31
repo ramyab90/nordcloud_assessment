@@ -109,7 +109,7 @@ Note: I have not created ARM templates for application gateway and azure monitor
 Apart from ARM templates, I created the following PowerShell scripts:
 
 1)	DeployResources.ps1
-PowerShell script to deploy multiple resources using ARM templates
+ - PowerShell script to deploy multiple resources using ARM templates
 
 2)	GroupResources.ps1
-PowerShell script to group the Azure resources based on the tags. It will help for cost analysis and resource tagging.
+ - PowerShell script to group the Azure resources based on the tags. It will help for cost analysis and resource tagging.
