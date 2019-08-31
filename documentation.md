@@ -86,6 +86,8 @@ Azure SQL is a PaaS service and it incorporate load balancing and high availabil
 
 When it comes to monitoring the platform, Azure Monitor plays a key role by delivering a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments.
 
+![Screenshot](/images/azure monitor.png)
+
 o	WebApps:
 As customer wants to monitor the application, I have configure application insights fopr WebApps detects application anomalies such as poor performance and failures, and sends telemetry to the Azure portal.
 
