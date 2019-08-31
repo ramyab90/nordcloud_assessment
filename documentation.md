@@ -79,3 +79,33 @@ The connection stings are used in WebApp to connect with SQL database for respec
 
 o	Business continuity:
 Azure SQL is a PaaS service and it incorporate load balancing and high availability as a built-in feature. Microsoft offers 99.9% of availability with Azure SQL servers.
+
+## Azure Monitor:
+
+When it comes to monitoring the platform, Azure Monitor plays a key role by delivering a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments.
+
+o	WebApps:
+As customer wants to monitor the application, I have configure application insights fopr WebApps detects application anomalies such as poor performance and failures, and sends telemetry to the Azure portal.
+
+o	SQL Monitoring:
+SQL servers will send the telemetry data to Azure monitor and it will be processed as dashboard/alerts.
+
+o	Log Analytics:
+It is the key component of Azure monitor as it collects logs from resources and help Developers and administrators can review health, performance, and usage information.
+
+## Infrastructure Deployment
+
+Developed the ARM templates to deploy the following resources. Refer the ARM templates along with this documentation.
+o	WebApps
+o	Virtual Network
+o	SQL Server
+o	SQL Database
+o	App Service Environment
+Note: I have not created ARM templates for application gateway and azure monitor as it requires additional backend configurations. But it is possible in the production scenarios. 
+Apart from ARM templates, I created the following PowerShell scripts:
+
+1)	DeployResources.ps1
+PowerShell script to deploy multiple resources using ARM templates
+
+2)	GroupResources.ps1
+PowerShell script to group the Azure resources based on the tags. It will help for cost analysis and resource tagging.
